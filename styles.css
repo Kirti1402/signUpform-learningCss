@@ -1,0 +1,58 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+   height: 15rem;
+   width: 15rem;
+   border: 2px solid black;
+    margin: auto;
+    margin-top:10rem ;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    row-gap: 0.5rem;
+}
+
+input,button{
+    width: 200px;
+    height: 25px;
+}
+
+input:placeholder-shown{
+    background-color: ivory;
+    border: 2px solid darkorange;
+    border-radius: 5px;
+}
+
+button{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(191, 229, 78);
+    outline: none;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+button:hover{
+    background-color: darkseagreen ;
+}
+ /* button:active{
+    background-color: blueviolet;
+ } */
+
+ input:invalid{
+    border: 1px solid rgb(230, 47, 47);
+ }
+
+ button::after{
+    content: '';
+    border-radius: 1rem;
+    background-color: antiquewhite;
+ }
